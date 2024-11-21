@@ -1,0 +1,25 @@
+if (objKhaiamanan.getHealth() <= 0 && objKamadan.getHealth() > 0 && objAltreia.getHealth() <= 0 && objShang.getHealth() <= 0 && objPalangga.getHealth() > 0){
+                    objStoryLine.congratsEndingKP();
+                    objStoryLine.endingKP();
+                } else if (objKhaiamanan.getHealth() <= 0 && objKamadan.getHealth() <= 0 && objAltreia.getHealth() > 0 && objShang.getHealth() <= 0 && objPalangga.getHealth() > 0){
+                    objStoryLine.congratsEndingAP();
+                    objStoryLine.endingAP();
+                } else if (objKhaiamanan.getHealth() <= 0 && objKamadan.getHealth() <= 0 && objAltreia.getHealth() <= 0 && objShang.getHealth() > 0 && objPalangga.getHealth() > 0){
+                    objStoryLine.congratsEndingSP();
+                    objStoryLine.endingSP();
+                } else if (objKhaiamanan.getHealth() <= 0 && objKamadan.getHealth() > 0 && objAltreia.getHealth() > 0 && objShang.getHealth() > 0 && objPalangga.getHealth() > 0){
+                    objStoryLine.congratsEndGameHeroes();
+                    objStoryLine.endGameHeroes();
+                }else if(objKhaiamanan.getHealth() <= 0 && objKamadan.getHealth() > 0 && objAltreia.getHealth() > 0 && objShang.getHealth() <= 0 && objPalangga.getHealth() > 0){
+                    simulateTyping("Congratulations! Kamadan, Altreia and Palangga have defeated " + objKhaiamanan.getName() + "!");
+                    objStoryLine.congratsEndingKAP();
+                    objStoryLine.endingKAP();
+                }else if(objKhaiamanan.getHealth() <= 0 && objKamadan.getHealth() > 0 && objAltreia.getHealth() <= 0 && objShang.getHealth() > 0 && objPalangga.getHealth() > 0){
+                    simulateTyping("Congratulations! Kamadan, Shang and Palangga have defeated " + objKhaiamanan.getName() + "!");
+                    objStoryLine.congratsEndingKSP();
+                    objStoryLine.endingKSP();
+                }else if(objKhaiamanan.getHealth() <= 0 && objKamadan.getHealth() <= 0 && objAltreia.getHealth() > 0 && objShang.getHealth() > 0 && objPalangga.getHealth() > 0){
+                    simulateTyping("Congratulations! Altreia, Shang, and Palangga have defeated " + objKhaiamanan.getName() + "!");
+                    objStoryLine.congratsEndingASP();
+                    objStoryLine.endingASP();
+                }
